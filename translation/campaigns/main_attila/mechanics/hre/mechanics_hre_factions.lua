@@ -1054,9 +1054,9 @@ end
 function mkHRE:Get_Authority_Tooltip()
 	local num_regions = #self.regions_in_empire;
 
-	local authoritystring = "Текущий ур. Имперской власти: "..Round_Number_Text(self.imperial_authority);
-	authoritystring = authoritystring.."\n\nИмператор: [[rgba:8:201:27:150]]+"..Round_Number_Text(hre_imperial_authority_gain_rate).."[[/rgba]]";
-	authoritystring = authoritystring.."\nРегионов в СРИ: [[rgba:8:201:27:150]]+"..Round_Number_Text(hre_imperial_authority_gain_per_region * num_regions).."[[/rgba]]";
+	local authoritystring = "Поточний рів. Імперської влади: "..Round_Number_Text(self.imperial_authority);
+	authoritystring = authoritystring.."\n\nІмператор: [[rgba:8:201:27:150]]+"..Round_Number_Text(hre_imperial_authority_gain_rate).."[[/rgba]]";
+	authoritystring = authoritystring.."\nРегіонів в СРІ: [[rgba:8:201:27:150]]+"..Round_Number_Text(hre_imperial_authority_gain_per_region * num_regions).."[[/rgba]]";
 
 	if self.current_reform >= 5 then
 		authoritystring = authoritystring.."\nРеформ: [[rgba:8:201:27:150]]+25%[[/rgba]]";
@@ -1065,14 +1065,14 @@ function mkHRE:Get_Authority_Tooltip()
 	end
 
 	if self.imperial_authority == self.imperial_authority_max then
-		authoritystring = authoritystring.."\n\nПрогнозируемый рост: [[rgba:255:0:0:150]]None[[/rgba]]";
-		authoritystring = authoritystring.."\nПрогнозируемый ур. Имперской власти: [[rgba:8:201:27:150]]100[[/rgba]]";
+		authoritystring = authoritystring.."\n\nПрогнозоване зростання: [[rgba:255:0:0:150]]None[[/rgba]]";
+		authoritystring = authoritystring.."\nПрогнозований рів. Імперської влади: [[rgba:8:201:27:150]]100[[/rgba]]";
 	elseif self:Calculate_Imperial_Authority() > self.imperial_authority_max then
-		authoritystring = authoritystring.."\n\nПрогнозируемый рост: [[rgba:255:255:0:150]]+"..Round_Number_Text(self:Calculate_Imperial_Authority() - self.imperial_authority_max).."[[/rgba]]";
-		authoritystring = authoritystring.."\nПрогнозируемый ур. Имперской власти: [[rgba:8:201:27:150]]100[/rgba]]";
+		authoritystring = authoritystring.."\n\nПрогнозоване зростання: [[rgba:255:255:0:150]]+"..Round_Number_Text(self:Calculate_Imperial_Authority() - self.imperial_authority_max).."[[/rgba]]";
+		authoritystring = authoritystring.."\nПрогнозований рів. Імперської влади: [[rgba:8:201:27:150]]100[/rgba]]";
 	else
-		authoritystring = authoritystring.."\n\nПрогнозируемый рост: [[rgba:8:201:27:150]]+"..Round_Number_Text(self:Calculate_Imperial_Authority() - self.imperial_authority).."[[/rgba]]";
-		authoritystring = authoritystring.."\nПрогнозируемый ур. Имперской власти: [[rgba:8:201:27:150]]"..Round_Number_Text(self:Calculate_Imperial_Authority()).."[[/rgba]]";
+		authoritystring = authoritystring.."\n\nПрогнозоване зростання: [[rgba:8:201:27:150]]+"..Round_Number_Text(self:Calculate_Imperial_Authority() - self.imperial_authority).."[[/rgba]]";
+		authoritystring = authoritystring.."\nПрогнозований рів. Імперської влади: [[rgba:8:201:27:150]]"..Round_Number_Text(self:Calculate_Imperial_Authority()).."[[/rgba]]";
 	end
 
 	return authoritystring;

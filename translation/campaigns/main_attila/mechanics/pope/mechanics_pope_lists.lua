@@ -30,7 +30,7 @@ POPE_LIST = {
 	{id = "Урбан V",			name = "names_name_2147380481", year = 1362.5, 	age = 53},
 	{id = "Григорій XI",		name = "names_name_2147380486", year = 1370.5, 	age = 41},
 	{id = "Урбан VI",			name = "names_name_2147380494", year = 1378, 	age = 60},
-	{id = "Боніфаций IX",		name = "names_name_2147380499", year = 1389.5, 	age = 34},
+	{id = "Боніфацій IX",		name = "names_name_2147380499", year = 1389.5, 	age = 34},
 	{id = "Інокентій VII",	name = "names_name_2147380503", year = 1404.5, 	age = 67},
 	{id = "Григорій XII",		name = "names_name_2147380504", year = 1406.5, 	age = 82},
 	{id = "Мартин V",			name = "names_name_2147380512", year = 1417.5, 	age = 48},
