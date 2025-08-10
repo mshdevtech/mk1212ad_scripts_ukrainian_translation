@@ -4,3 +4,7 @@
 
 # Ignore .idea files
 /.idea/*
+
+# Ignore temp files
+/_temp/*
+!_temp/.gitkeep
