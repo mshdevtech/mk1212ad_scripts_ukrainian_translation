@@ -1,0 +1,6 @@
+# Ignore all files in the _upstream directory
+/_upstream/*
+!_upstream/.gitkeep
+
+# Ignore .idea files
+/.idea/*
