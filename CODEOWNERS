@@ -1,0 +1,4 @@
+# CODEOWNERS
+*.loc.tsv   @mshdevtech
+*.lua   @mshdevtech
+scripts/* @mshdevtech
