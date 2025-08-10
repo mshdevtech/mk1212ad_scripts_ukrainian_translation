@@ -2,9 +2,12 @@
 /_upstream/*
 !_upstream/.gitkeep
 
+# Ignore all files in the _tmp directory
+/_temp/*
+!_temp/.gitkeep
+
 # Ignore .idea files
 /.idea/*
 
-# Ignore temp files
-/_temp/*
-!_temp/.gitkeep
+# Ignore .env files
+.env
